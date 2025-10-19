@@ -16,3 +16,12 @@ Tweaking:
 I modified the code to use a list of movies instead of integers. The foo key, which was originally of type int, was changed to a movie key of type str. The initial operation that concatenated integers was updated to concatenate strings instead. Additionally, I changed the questions and logic in the implementation of the add_messages and remove_messages reducers to reflect the new context of handling movie titles.
 
 file: ![state-reducers.ipynb](state-reducers.ipynb)
+
+Video3:
+
+LangGraph supports defining and using multiple state schemas within a single graph, specifically as Private, Input, and Output state schemas. Private states are used for passing information between nodes internally and are not exposed outside the graph. Input states are provided by the user as inputs to the graph, while Output states are the results produced by the graph and returned to the user. This separation helps minimize redundant information and encapsulates internal details, ensuring users only interact with the necessary data for the application.
+
+Tweaking:
+I updated the private state example to use a score (or scratch) key instead of the previous example, and made sure all invocations and references in the code reflect this change. Additionally, I reworked the input and output state schemas so that they are consistent with the new score/scratch structure, ensuring the flow and data handling in the graph align with the updated schema.
+
+file: ![multiple-schemas.ipynb](multiple-schemas.ipynb)
