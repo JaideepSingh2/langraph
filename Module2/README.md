@@ -34,3 +34,13 @@ Tweaking:
 I modified the deletion and filtering of messages, and also updated and added trimming functionality. Various token usage limits and trimming strategies were tested to observe their effects.
 
 file: ![trim-filter-messages.ipynb](trim-filter-messages.ipynb)
+
+Video 5:
+
+I learned how to summarize conversation history using a Python function and implement it with LangGraph's checkpointers for persistence. The summary function is triggered only when the conversation history exceeds a certain number of messages, using a conditional edge. This approach is more resource-efficient for retaining essential information compared to trims, filters, or reducers.
+
+Tweaking:
+
+I changed the threshold for triggering the summary function to 8 messages and extended the conversation by introducing a new topic about my favourite movies to test this behavior. I also reviewed all the traces in LangGraph, which are included as attachments within the notebook.
+
+file: ![chatbot-summarization.ipynb](chatbot-summarization.ipynb)
