@@ -25,3 +25,12 @@ Tweaking:
 I updated the private state example to use a score (or scratch) key instead of the previous example, and made sure all invocations and references in the code reflect this change. Additionally, I reworked the input and output state schemas so that they are consistent with the new score/scratch structure, ensuring the flow and data handling in the graph align with the updated schema.
 
 file: ![multiple-schemas.ipynb](multiple-schemas.ipynb)
+
+Video 4:
+
+In this video, we learned how editing messages can help reduce token usage, making our application more cost-efficient. We revisited removing messages and explored filtering which messages the LLM sees to lower token usage without altering the saved message state. Additionally, we covered trimming messages, which lets us control token usage by number and customize strategies, including whether to allow partial messages.
+
+Tweaking:
+I modified the deletion and filtering of messages, and also updated and added trimming functionality. Various token usage limits and trimming strategies were tested to observe their effects.
+
+file: ![trim-filter-messages.ipynb](trim-filter-messages.ipynb)
