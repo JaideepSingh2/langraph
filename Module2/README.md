@@ -44,3 +44,13 @@ Tweaking:
 I changed the threshold for triggering the summary function to 8 messages and extended the conversation by introducing a new topic about my favourite movies to test this behavior. I also reviewed all the traces in LangGraph, which are included as attachments within the notebook.
 
 file: ![chatbot-summarization.ipynb](chatbot-summarization.ipynb)
+
+Video 6:
+
+LangGraph enables the use of checkpointers to add persistence layers to applications, supporting technologies like SQLite and PostgreSQL. You can achieve this by creating an SQLite or PostgreSQL connection and passing it to the appropriate LangGraph checkpointer class. This checkpointer is then provided to the graph, allowing state to be saved and restored as needed.
+
+Tweaking:
+
+Added a code cell at the end to demonstrate how to clear all messages from the persisted state in the Sqlite database, showing how to reset the conversation thread. This tweak illustrates external memory manipulation.
+
+file: ![chatbot-external-memory.ipynb](chatbot-external-memory.ipynb)
