@@ -33,3 +33,11 @@ Tweaking:
 A new dynamic breakpoint was added at step 3 to check if the input contains digits and another node was placed before END. The conditions and flags for dynamic nodes were updated, and dynamic_breakpoints.py was changed to include these updates.
 
 file: ![dynamic_breakpoints.py](dynamic_breakpoints.py) ![dynamic_breakpoints.ipynb](dynamic_breakpoints.ipynb)
+
+Video5:
+I learned about replaying and forking at specific checkpoints or steps. Using get_state_history() lets you see the complete history of the graph’s states. Forking allows you to start the graph again from an earlier checkpoint with new input, while replaying simply re-runs a checkpoint without re-executing nodes since the graph tracks if it has already run that step.
+
+Tweaking:
+The arithmetic operation tools were updated and expanded, and the prompts were changed so that multiple tools could be called at the same time.
+
+file: ![dynamic_breakpoints.py](dynamic_breakpoints.py)
