@@ -25,3 +25,11 @@ Tweaking:
 The tools were switched from arithmetic to string operations and the prompts were updated to match. The section where the LLM waits for user input was changed to allow several inputs at different breakpoints, with each new input updating the previous one using a while loop.
 
 file: ![edit-state-human-feedback.ipynb](edit-state-human-feedback.ipynb)
+
+Video4:
+Earlier, breakpoints would always trigger no matter what the user input was, which is not ideal for every situation. Dynamic breakpoints were added so they only activate when certain conditions are met, making them more flexible. This section shows how a dynamic breakpoint was created and how it changed the flow.
+
+Tweaking:
+A new dynamic breakpoint was added at step 3 to check if the input contains digits and another node was placed before END. The conditions and flags for dynamic nodes were updated, and dynamic_breakpoints.py was changed to include these updates.
+
+file: ![dynamic_breakpoints.py](dynamic_breakpoints.py) ![dynamic_breakpoints.ipynb](dynamic_breakpoints.ipynb)
