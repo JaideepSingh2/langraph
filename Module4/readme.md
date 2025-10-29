@@ -15,3 +15,11 @@ Tweaking:
 A new subgraph called follow-up was added that asks "What more information do you need?" and the schema was updated to include it. The logs showed the follow-up question being printed, confirming it was integrated into the parent graph. The notebook and screenshots of the trace with the follow-up are included in the folder.
 
 file: ![sub_graph.ipynb](sub_graph.ipynb)
+
+Video3:
+Map-reduce is a method where the map step splits a task into smaller parts to run in parallel, and the reduce step gathers and combines the results from those parts.
+
+Tweaking:
+Pickup-line generation and selection were added alongside the joke generator and best joke selection. Both joke and pickup-line generators were run in parallel to choose the best overall result. The map-reduce.py file was updated with these changes.
+
+file: ![map_reduce.py](map_reduce.py) ![map-reduce.ipynb](map-reduce.ipynb)
