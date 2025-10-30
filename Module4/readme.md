@@ -23,3 +23,11 @@ Tweaking:
 Pickup-line generation and selection were added alongside the joke generator and best joke selection. Both joke and pickup-line generators were run in parallel to choose the best overall result. The map-reduce.py file was updated with these changes.
 
 file: ![map_reduce.py](map_reduce.py) ![map-reduce.ipynb](map-reduce.ipynb)
+
+Video4:
+I learned how to build a Research Assistant by combining earlier concepts, creating an analyst for a topic where each analyst researches in parallel and their findings are merged into one report. The analyst asks questions about the topic, searches different sources for answers, and writes results to context for answering. This repeats until a condition is met, messages from the interview are saved to state, and a section is written based on the interview.
+
+Tweaking:
+The prompts were updated to focus on analyzing singularity and AGI along with their possible negative effects. A search_research function was added to work with the existing search_web and search_wikipedia functions using Tavily.
+
+file: ![research-assistant.ipynb](research-assistant.ipynb)
